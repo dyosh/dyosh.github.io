@@ -1,18 +1,15 @@
-body {
-	background-color: #fafafa;
-	margin: 0 auto;
-	font-family: 'Roboto', sans-serif;
-	color: #666666;
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /*overflow: hidden;*/
 }
 
-nav {
-    height: 75px;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    /*offset-x | offset-y | blur-radius | color */
-    box-shadow: 0px 3px 5px #B0BEC5;
-    background-color: #607D8B;
+div,h1,h2,h3,p,a,img {
+    padding: 0;
+    margin: 0;
 }
 
 ul,
@@ -31,117 +28,158 @@ a:visited {
     color: #ECEFF1;
 }
 
-nav li {
-	height: 53px;
+/******************************************
+                SIDENAVERINO
+*******************************************/
+.side-nav {
+    padding-top: 50px;
+    width: 17%;
+    min-height: 100%;
+    background-color: #202427;
+    position: fixed;
 }
 
-.nav__github {
-    float: right;
+.name_container {
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+}
+
+.name {
+    color: #f8ffff;
+    font-size: 23px;
+    font-weight: 900;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.links_container {
+    color: white;
+    width: 100%;
+    height: 33px;
+    text-align: center;
+}
+
+.links_container i {
+    margin: 5px;
     font-size: 24px;
-    padding-top: 22px;
-    padding-right: 15px;
-    padding-left: 15px;
-    color: #ECEFF1;
 }
 
-.nav__fcc {
-    float: right;
-    font-size: 24px;
-    padding-top: 22px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #ECEFF1;
+/******************************************
+                CONTENTERINO
+*******************************************/
+
+.content {
+    width: 83%;
+    min-height: 100%;
+    padding-left: 17%;
 }
 
-.nav__github:hover,
-.nav__fcc:hover {
-	background-color: #78909C;
+.portfolio {
+    /*width: 100%;*/
+    /*position: relative;*/
+    text-align: center;
 }
 
-.nav__name {
-    font-size: 24px;
-    padding-top: 22px;
-    padding-left: 12%;
-    color: #ECEFF1;
+.portfolio h1 {
+    padding: 50px;
+    color: #262626;
+    font-weight: 100;
+    text-align: center;
+    vertical-align: middle;     
 }
 
-#home-btn {
-	margin-bottom: 100px;
-}
-
-h1,h2,h3,h4 {
-	color: #37474F;
-}
-
-.container {
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.fullstack {
-	width: 80%;
-	margin: 0 auto;
-	margin-top: 50px;	
+.portfolio_fullstack {
+    width: 100%;
+    /*display: inline-flex;*/
 }
 
 .fullstack-item {
-	text-align: left;
-	max-width: 650px;
-	display: inline-block;
-	margin: 15px;
+    background-color: #202427;
+    color: #f8ffff;
+    max-width: 550px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    height: 240px;
+    display: inline-block;
+    vertical-align: middle
 }
 
 .fullstack-image {
-	width: 600px;
-	height: 400px;
-	box-shadow: 0px 0px 12px #222;
+    width: 50%;
+    float: left;
 }
 
-.fullstack-image:hover {
-	opacity: 0.7;
+.fullstack-image img {
+    width: 100%;
+    height: 220px;
 }
 
-.image:hover {
-	opacity: 0.7;
+.fullstack-title {
+    width: 50%;
+    float: left;
+    height: 55px;
+    line-height: 55px;
+    font-size: 28px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.samples {
-	width: 80%;
-	margin: 0 auto;
-	margin-top: 50px;
+.fullstack-desc {
+    width: 50%;
+    height: 45%;
+    float: left;
+    border-bottom: 2px solid #263238;
+    border-top: 2px solid #263238;
+    border
+    text-align: center;
+    vertical-align: middle;
 }
 
-.sample-item {
-	text-align: left;
-	max-width: 275px;
-	display: inline-block;
-	margin: 15px;
+.fullstack-frameworks {
+    width: 50%;
+    height: 30%;
+    line-height: 55px;
+    font-size: 18px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;    
 }
 
-h2, p {
-	display: inline;
-	font-size: 30px;
+.icon  {
+    color: #f8ffff;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.blog {
-	width: 65%;
-	margin: 0 auto;
+.portfolio_smallprojs {
+    width: 100%;
 }
 
-.blog, h1 {
-	text-align: center;
+.smallproj-item {
+    background-color: #202427;
+    color: #f8ffff;
+    padding: 16px;
+    margin-left: 5px;
+
+
+    max-width: 360px;
+    margin-bottom: 10px;
+    height: 170px;
+    display: inline-block;
 }
 
-.blog, p {
-	text-align: left;
+.smallproj-image {
+    width: 50%;
+    float: left;
 }
 
-.image {
-	width: 255px;
-	height: 200px;
-	box-shadow: 0px 0px 12px #222;
+.smallproj-image img {
+    width: 100%;
+    height: 170px;
 }
-
-
-
